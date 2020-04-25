@@ -88,7 +88,7 @@ static __always_inline void __bpf_memzero(void *d, __u64 len)
 	case 26: __it_set(d, 16); goto jmp_24;
 	case 18: __it_set(d, 16); goto jmp_16;
 	case 10: __it_set(d, 16); goto jmp_8;
-	case  2: __it_set(d, 16);
+	case  2:
 		 break;
 
 	case  1: __it_set(d, 8);
