@@ -569,3 +569,8 @@ func SkipItIf(condition func() bool, text string, body func()) bool {
 
 	return It(text, body)
 }
+
+// Failf calls Fail with a formatted string
+func Failf(msg string, args ...interface{}) {
+	Fail(fmt.Sprintf(msg, args...))
+}
